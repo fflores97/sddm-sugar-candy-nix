@@ -36,6 +36,10 @@ stdenvNoCC.mkDerivation rec {
     wrapQtAppsHook
   ];
 
+  buildInputs = [
+    qtbase
+  ];
+
   installPhase = ''
     local installDir=$out/share/sddm/themes/${pname}
     mkdir -p $installDir
