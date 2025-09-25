@@ -4,7 +4,6 @@
   sddm,
   qtbase,
   qtsvg,
-  qtquickcontrols2,
   wrapQtAppsHook,
   version ? "git",
   themeConf ? ../theme.conf,
@@ -31,7 +30,6 @@ stdenvNoCC.mkDerivation rec {
     sddm
     qtbase
     qtsvg
-    qtquickcontrols2
   ];
 
   nativeBuildInputs = [
