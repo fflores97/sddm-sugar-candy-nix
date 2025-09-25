@@ -37,6 +37,7 @@ inputs: {
 
   # Final Package
   defaultPackage = inputs.self.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
+    sddm = pkgs.kdePackages.sddm;
     themeConf = "${theme-conf-file}";
   };
 in {
