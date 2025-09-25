@@ -5,7 +5,6 @@
   qtbase,
   qtsvg,
   qtquickcontrols2,
-  qtgraphicaleffects,
   wrapQtAppsHook,
   version ? "git",
   themeConf ? ../theme.conf,
@@ -32,7 +31,6 @@ stdenvNoCC.mkDerivation rec {
     sddm
     qtbase
     qtsvg
-    qtgraphicaleffects
     qtquickcontrols2
   ];
 
